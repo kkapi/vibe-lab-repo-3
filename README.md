@@ -17,6 +17,8 @@ for (index, name) in month_names.enumerated() {
   print(name, month_days[index])
 }
 
+print("")
+
 let month_tuples = [
   (month: "Январь", days: 31),
   (month: "Февраль", days: 29),
@@ -34,6 +36,12 @@ let month_tuples = [
 
 for month in month_tuples {
   print("\(month.month) - \(month.days) дней")
+}
+
+print("")
+
+for (index, name) in month_names.enumerated().reversed() {
+  print(name, month_days[index])
 }
 
 let selectedMonthIndex = 4
